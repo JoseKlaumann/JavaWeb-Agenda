@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+ <!--  name: Pode ser qualquer um -->
+  <persistence-unit name="agenda" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>model.JavaBeans</class>
+    
+      <!--  Configuracao do JDBC -->
+    <properties>
+      <property name="hibernate.archive.autodetection" value="class"/>
+	 <property name="" value=""/> 
+      <property name="hibernate.connection.url" value="jdbc:MySql://localhost:3306/coursejdbc"/>
+      <property name="hibernate.connection.user" value="root"/>
+      <property name="hibernate.connection.password" value="poolparty"/><!-- Colocar a senha utilizada -->
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            
+      <!--  Configuracao do hibernate -->
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="use_sql_comments" value="true"/>
+	  <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+    </properties>
+  </persistence-unit>
+</persistence>
