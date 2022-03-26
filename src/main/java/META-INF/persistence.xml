@@ -13,7 +13,7 @@
 	 <property name="" value=""/> 
       <property name="hibernate.connection.url" value="jdbc:MySql://localhost:3306/coursejdbc"/>
       <property name="hibernate.connection.user" value="root"/>
-      <property name="hibernate.connection.password" value="poolparty"/><!-- Colocar a senha utilizada -->
+      <property name="hibernate.connection.password" value=""/><!-- Colocar a senha utilizada -->
       <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             
       <!--  Configuracao do hibernate -->
